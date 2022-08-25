@@ -1,0 +1,32 @@
+1.
+var words = ['seal', 'dog', 'scorpion', 'orangutan', 'salamander'];
+
+var animalwiths = words.filter(function(s){
+  return s.startsWith("s")
+}
+);
+
+console.log(animalwiths)
+
+
+2.
+var topFiveCityNames = cityGrowths.map(city => city.City);
+var topFiveCityGrowths = cityGrowths.map(city => parseInt(city.Increase_from_2016));
+var slicetopGrowths = topFiveCityGrowths.slice (0, 5)
+var sliceTopFive = topFiveCityNames.slice(0, 5)
+var trace = {
+    x: sliceTopFive,
+    y: slicetopGrowths,
+    type: "bar"
+  };
+  var data = [trace];
+  var layout = {
+    title: "Most Rapidly Growing Cities",
+    xaxis: {title: "City" },
+    yaxis: {title: "Population Growth, 2016-2017"}
+  };
+  Plotly.newPlot("bar-plot", data, layout);
+
+
+
+  
